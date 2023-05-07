@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:quiz_hive/routes/myroutes.dart';
 import 'package:quiz_hive/view/home_page.dart';
+import 'package:hive/hive.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,6 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+      routes: MyRoutes.routes,
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
