@@ -21,6 +21,9 @@ class _SplashState extends State<Splash> {
       backgroundColor: Colors.grey[900],
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisSize: MainAxisSize.max,
           children: const [
             Text(
               "Splash",
@@ -34,7 +37,7 @@ class _SplashState extends State<Splash> {
 
   Future goToHome() async {
     Future.delayed(const Duration(seconds: 3), () {
-      Navigator.pushNamed(context, MyRoutes.home);
+      Navigator.pushNamed(context, MyRoutes.login);
     });
   }
 }

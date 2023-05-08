@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/adapters.dart';
 import 'package:quiz_hive/routes/myroutes.dart';
-import 'package:quiz_hive/view/home_page.dart';
-import 'package:hive/hive.dart';
 import 'package:quiz_hive/view/splash.dart';
 
 void main() async {
@@ -21,6 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+      debugShowCheckedModeBanner: false,
       routes: MyRoutes.routes,
       home: const Splash(),
     );
